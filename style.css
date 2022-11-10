@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz@9..144&family=Montserrat&display=swap");
+
+html {
+  --greenShade: hsl(158, 36%, 37%);
+  --greyShade: hsl(228, 12%, 48%);
+  --montserratFont: "Montserrat", sans-serif;
+  --frauncesFont: "Fraunces", serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.background {
+  background-color: hsl(30, 38%, 92%);
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 50%;
+  height: 60%;
+  border: 1px solid transparent;
+  border-radius: 10px;
+}
+.left-card {
+  background: url("/images/image-product-desktop.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.right-card {
+  background-color: #fff;
+  padding: 40px;
+}
+.right-card p {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: var(--greyShade);
+  letter-spacing: 5px;
+  font-family: var(--montserratFont);
+  font-weight: 500;
+}
+.right-card h2 {
+  margin: 30px 0;
+  font-size: 2.2rem;
+  text-transform: capitalize;
+  width: 80%;
+  color: hsl(212, 21%, 14%);
+  font-family: var(--frauncesFont);
+  font-weight: 700;
+}
+.right-card h4 {
+  margin-bottom: 30px;
+  line-height: 1.6rem;
+  color: var(--greyShade);
+  letter-spacing: 0.5px;
+  font-family: var(--montserratFont);
+  font-weight: 700;
+}
+.price {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.price h1 {
+  color: var(--greenShade);
+  margin-right: 20px;
+  font-family: var(--frauncesFont);
+  font-weight: 700;
+}
+.price span {
+  text-decoration: line-through;
+  color: var(--greyShade);
+  font-family: var(--montserratFont);
+  font-weight: 700;
+}
+button {
+  display: flex;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 10px;
+  background-color: var(--greenShade);
+  justify-content: center;
+  cursor: pointer;
+}
+button h5 {
+  color: #fff;
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: larger;
+  font-family: var(--montserratFont);
+}
