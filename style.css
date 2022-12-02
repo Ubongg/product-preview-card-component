@@ -15,9 +15,11 @@ html {
   background-color: hsl(30, 38%, 92%);
   width: 100vw;
   height: 100vh;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
+  display: grid;
+  place-items: center;
 }
 .cards {
   display: grid;
@@ -97,4 +99,143 @@ button h5 {
   font-weight: 700;
   font-size: larger;
   font-family: var(--montserratFont);
+}
+
+@media screen and (max-width: 1335px) {
+  .cards {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1215px) {
+  .cards {
+    width: 60%;
+  }
+}
+@media screen and (max-width: 1115px) {
+  .cards {
+    width: 65%;
+  }
+}
+@media screen and (max-width: 1030px) {
+  .cards {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 955px) {
+  .cards {
+    width: 75%;
+  }
+}
+@media screen and (max-width: 900px) {
+  .cards {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 835px) {
+  .cards {
+    width: 85%;
+  }
+}
+@media screen and (max-width: 790px) {
+  .cards {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 745px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+  }
+  .left-card {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+    height: 40%;
+    width: 100%;
+  }
+  .right-card {
+    /* padding: 30px; */
+    height: 60%;
+    width: 100%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+  }
+  .right-card p {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--greyShade);
+    letter-spacing: 5px;
+    font-family: var(--montserratFont);
+    font-weight: 500;
+  }
+  .right-card h2 {
+    margin: 30px 0;
+    font-size: 2.4rem;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 635px) {
+  .right-card h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 495px) {
+  .right-card h2 {
+    margin: 20px 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .right-card h4 {
+    margin-bottom: 10px;
+  }
+  .price {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 373px) {
+  .right-card {
+    padding: 35px;
+  }
+  .right-card h4 {
+    margin-bottom: 10px;
+  }
+  .price {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 360px) {
+  .right-card {
+    padding: 30px;
+  }
+  .right-card h2 {
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width: 340px) {
+  /* .right-card p {
+    margin-top: -10px;
+  } */
+  .right-card h2 {
+    margin: 10px 0;
+  }
+  .right-card h4 {
+    margin-bottom: 10px;
+  }
+  .price {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 313px) {
+  .right-card h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 300px) {
+  .right-card h2 {
+    font-size: 1.6rem;
+  }
 }
