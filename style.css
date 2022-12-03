@@ -239,3 +239,56 @@ button h5 {
     font-size: 1.6rem;
   }
 }
+
+@media screen and (max-height: 720px) {
+  .right-card {
+    padding: 30px;
+  }
+  .right-card p {
+    margin-top: -15px;
+  }
+  .right-card h2 {
+    /* font-size: 1.6rem; */
+    margin: 10px 0;
+  }
+}
+@media screen and (max-height: 670px) {
+  .right-card {
+    padding: 30px;
+  }
+  .right-card p {
+    margin-top: -15px;
+  }
+  .right-card h2 {
+    font-size: 1.6rem;
+    margin: 10px 0;
+  }
+}
+@media screen and (max-height: 653px) {
+  .right-card {
+    padding: 20px;
+  }
+  .right-card p {
+    margin-top: -10px;
+  }
+  .right-card h2 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  .right-card h4 {
+    margin-bottom: 15px;
+    line-height: 1.3rem;
+  }
+  .price {
+    margin-bottom: 20px;
+  }
+  .price h1 {
+    font-size: 1.2rem;
+  }
+  button {
+    padding: 10px;
+  }
+  button h5 {
+    font-size: small;
+  }
+}
